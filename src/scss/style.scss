@@ -1,0 +1,620 @@
+@import './setings';
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Sen;
+	display: flex;
+	flex-direction: column;
+}
+
+// UNIWERSAL STYLING
+
+.headings {
+	font-size: 16px;
+	line-height: 34px;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 12px;
+	text-transform: uppercase;
+}
+
+.paragraphs {
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+}
+
+.forminputs {
+	box-sizing: border-box;
+	border: none;
+	font-size: 17px;
+	line-height: 20px;
+	font-weight: 400;
+	color: $color-FormFonts;
+	padding: 13px 20px;
+	background: $color-white;
+	border-radius: 25px;
+}
+
+.buttons {
+	outline: 0;
+	font-family: Open Sans;
+	cursor: pointer;
+	border: none;
+	color: $color-white;
+	background: $color-buttonsBgc;
+	border-radius: 23px;
+	font-weight: 600;
+	font-size: 16px;
+	box-shadow: 0px 12px 44px $color-buttonsSdw;
+}
+
+// HEADER SECTION
+
+.header {
+	box-sizing: border-box;
+	position: fixed;
+	z-index: 100;
+	background-color: $color-white;
+	box-sizing: border-box;
+	padding: 0 24px 0 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 70px;
+	left: 0px;
+	top: 0px;
+	.header__logo img{
+		width: 56px;
+		height: 22px;
+	}
+	.header__links {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0px;
+		width: 184px;
+		height: 19px;
+		.header__link {
+			position: relative;
+			text-decoration: none;
+			font-size: 16px;
+			line-height: 19px;
+			color: $color-fonLink;
+		}
+		.header__link > span {
+			position: absolute;
+			width: 0%;
+			height: 2px;
+			background-color: $color-underlineLink;
+			left: -20%;
+			top: 120%;
+			transition: 0.5s;
+		}
+		.header__link:hover span {
+			width: 140%;
+		}
+	}
+	.header__separator {
+		/* Separator */
+		position: absolute;
+		width: 1440px;
+		height: 1px;
+		left: 2px;
+		top: 69px;
+		background: $color-white;
+		opacity: 0.11;
+	}
+}
+
+// MAIN SECTION
+
+.mainSection {
+	position: relative;
+	width: 100%;
+	min-height: 750px;
+	top: 70px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	.mainSection__mask {
+		z-index: -3;
+		.mainSection__mask--left {
+			position: absolute;
+			width: 1440px;
+			height: 908px;
+			left: -170px;
+			top: -329px;
+			background: $color-gradtrianglemask;
+			transform: matrix(-0.96, -0.23, -0.28, 0.96, 0, 0);
+			border-radius: 100px;
+		}
+		.mainSection__mask--right {
+			position: absolute;
+			width: 1700px;
+			height: 908px;
+			left: 725px;
+			top: -170px;
+			background: $color-gradtrianglemask;
+			border-radius: 100px;
+			transform: rotate(-29deg);
+		}
+	}
+	.mainSection__shape2 {
+		position: absolute;
+		width: 759px;
+		height: 663px;
+		right: 31%;
+		top: -232px;
+		background: $color-bgctriangle2;
+		box-shadow: 0px 4px 130px $color-shwtriangle2;
+		transform: matrix(-0.96, -0.28, -0.28, 0.96, 0, 0);
+		border-radius: 80px;
+		z-index: -2;
+	}
+	.mainSection__shape1 {
+		position: absolute;
+		width: 1263px;
+		height: 800px;
+		left: -60px;
+		top: -395px;
+		background: $color-bgctriangle1;
+		box-shadow: 0px 11px 106px $color-shwtriangle1;
+		transform: matrix(-0.96, -0.25, -0.28, 0.96, 0, 0);
+		border-radius: 80px;
+		z-index: -1;
+	}
+
+	.mainSection__centerContent {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.mainSection__left {
+			width: 90%;
+			margin-top: 50px;
+			.mainSection__article {
+				font-weight: bold;
+				font-size: 24px;
+				line-height: 32px;
+				letter-spacing: 0.2px;
+				white-space: normal;
+				color: $color-white;
+			}
+			.mainSection__labelSubscribe {
+				font-size: 14px;
+				line-height: 26px;
+				color: $color-white;
+				opacity: 0.7;
+				margin-top: 48px;
+				margin-bottom: 8px;
+			}
+			.mainSection__form {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				.mainSection__formInput {
+					font-family: Sen;
+					height: 45px;
+				}
+				.mainSection__formButton {
+					height: 46px;
+					margin-top: 16px;
+				}
+				.mainSection__formInput:focus,
+				.mainSection__formButton:focus {
+					outline: none;
+				}
+			}
+		}
+		.mainSection__right {
+			display: flex;
+			justify-content: center;
+			width: 90%;
+			margin-top: 156px;
+			.mainSection__vPlayer {
+				position: relative;
+				width: 100%;
+				height: 200px;
+				border-radius: 5px;
+				overflow: hidden;
+				.mainSection__Video {
+					width: 100%;
+				}
+				.mainSection__Playbutton {
+					width: 25%;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	.mainSection__Arrow {
+		position: absolute;
+		cursor: pointer;
+		width: 30px;
+		height: 30px;
+		border: 1px solid $color-borderArrow;
+		border-radius: 50%;
+		background: $color-bgcArrow;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 436px;
+		margin-bottom: 73px;
+		transition: 0.3s;
+	}
+	.mainSection__Arrow:hover {
+		transform: scale(1.1);
+	}
+	.mainSection__Arrow img {
+		width: 50%;
+	}
+	.mainSection__socialmedia {
+		position: fixed;
+		right: 27px;
+		top: 62%;
+		z-index: 100;
+		cursor: pointer;
+		width: 30px;
+		height: 30px;
+		background-color: $color-bgcSocialMedia;
+		border-radius: 19px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.mainSection__socialmedia--Facebook {
+		margin-top: 39px;
+	}
+	.mainSection__socialmedia > i {
+		color: $color-colorSocialMedia;
+	}
+	.mainSection__socialmedia:hover > i,
+	.mainSection__Arrow:hover > i {
+		color: $color-white;
+		opacity: 1;
+		transition: 0.3s;
+	}
+}
+
+// TEAM SECTION SWIPER
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+	margin-top: 107px;
+	margin-bottom: 20px;
+	.swiper-slide {
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		width: 136px;
+		margin: 6px 0px;
+		margin-bottom: 62px;
+		.team__teamsquare {
+			width: 135px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			margin-top: 16px;
+			.team__picture {
+				cursor: pointer;
+				width: 115px;
+				height: 115px;
+				background-size: cover;
+				background-repeat: no-repeat;
+				border-radius: 50%;
+				transition: 0.3s;
+			}
+			.team__picture:hover {
+				transform: scale(1.1);
+			}
+			.team__picture1 {
+				background-image: url('../img/per1.png');
+			}
+			.team__picture2 {
+				background-image: url('../img/per2.png');
+			}
+			.team__picture3 {
+				background-image: url('../img/per3.png');
+			}
+			.team__picture4 {
+				background-image: url('../img/per4.png');
+			}
+			.team__personName {
+				font-size: 16px;
+				color: $color-teamName;
+				line-height: 34px;
+				font-weight: 400;
+				margin-top: 10px;
+			}
+			.team__personPosition {
+				font-family: Open Sans;
+				padding-bottom: 8px;
+				font-size: 13px;
+				line-height: 18px;
+				color: $color-teamPosition;
+				opacity: 0.5;
+			}
+			.team__aboutPerson {
+				color: $color-teamAbout;
+				font-size: 12px;
+				line-height: 18px;
+			}
+			.team__links {
+				display: flex;
+				justify-content: center;
+				.team__link {
+					width: 43px;
+					height: 23px;
+					border: 1px solid $color-teamLinksborder;
+					box-sizing: border-box;
+					border-radius: 3px;
+					margin: 6px;
+					line-height: 23px;
+					cursor: pointer;
+					margin-top: 13px;
+				}
+				.team__link > i {
+					color: $color-teamLinksIcon;
+					opacity: none;
+					font-size: 13px;
+				}
+			}
+		}
+	}
+	.swiper-pagination {
+		top: 393px;
+	}
+}
+
+// TEAM SECTION
+
+.team {
+	display: none;
+}
+
+// CONTACT US SECTION
+
+.contactUs {
+	width: 100%;
+	min-height: 682px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: $color-contactUsBgc;
+	.contactUs__heading {
+		color: $color-white;
+		margin-top: 88px;
+	}
+	.contactUs__paragraphs {
+		width: 265px;
+		color: $color-white;
+		font-size: 14px;
+		line-height: 18px;
+		font-weight: 400;
+		margin-top: 26px;
+		text-align: center;
+	}
+	.contactUs__formSquare {
+		width: 90%;
+		height: 370px;
+		background: $color-contactUsFromBgc;
+		border-radius: 13px;
+		margin-top: 50px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-end;
+		box-sizing: border-box;
+		padding: 24px 16px;
+		.contactUs__input {
+			width: 100%;
+			margin: 12px 0;
+		}
+		.contactUs__button {
+			width: 95px;
+			height: 46px;
+			margin-top: 39px;
+		}
+		.contactUs__formcheckbox {
+			margin-top: 24px;
+			display: flex;
+			align-items: center;
+			.contactUs__checkbox {
+				background: $color-white;
+				white-space: nowrap;
+				border-radius: 10px;
+				width: 24px;
+				height: 24px;
+			}
+			.contactUs__checkboxLabel {
+				font-size: 17px;
+				margin-left: 8px;
+				line-height: 20px;
+				color: $color-white;
+			}
+		}
+	}
+}
+
+// FOOTER PAGE SECTION
+
+.footerPage {
+	width: 100%;
+	min-height: 225px;
+	background: $color-footerGradient;
+	display: flex;
+	flex-direction: column;
+	.footerPage__top {
+		display: flex;
+		box-sizing: border-box;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		margin-top: 16px;
+		padding: 16px;
+		.footerPage__logo{
+			align-self: flex-start;
+			width: 55px;
+			height: 22px;
+		}
+		.footerPage__contactLink {
+			margin-top: 16px;
+			.footerPage__contactHeading {
+				font-size: 16px;
+				margin-bottom: 16px;
+				line-height: 19px;
+				text-align: center;
+				letter-spacing: 0.32px;
+				color: $color-footerContactHeading;
+			}
+			.footerPage__mail {
+				font-size: 20px;
+				line-height: 24px;
+				text-align: center;
+				letter-spacing: 0.4px;
+				color: $color-footerMailLink;
+				text-decoration-line: underline;
+			}
+		}
+		.footerPage__button {
+			width: 220px;
+			height: 46px;
+			margin-top: 40px;
+		}
+	}
+	.footerPage__bottom {
+		align-self: center;
+		display: flex;
+		box-sizing: border-box;
+		flex-wrap: wrap;
+		width: 100%;
+		background-color: #fff;
+		justify-content: center;
+		align-items: center;
+		margin-top: 16px;
+		padding: 8px;
+		.footerPage__link {
+			width: 136px;
+			text-align: center;
+			text-decoration: none;
+			font-size: 12px;
+			line-height: 24px;
+			color: $color-footerLinks;
+			padding: 8px;
+		}
+	}
+}
+
+// MODAL SECTION
+
+.modal {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $color-blurbgcModal;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 101;
+	.modal__box {
+		position: absolute;
+		margin-top: 70px;
+		top: 45%;
+		left: 50%;
+		width: 90%;
+		height: 80vh;
+		transform: translate(-50%, -50%);
+		background-color: $color-white;
+		box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.25);
+		border-radius: 20px;
+		padding: 15px;
+		box-sizing: border-box;
+		.modal__main {
+			top: 72px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			.modal__close-button {
+				align-self: flex-end;
+				width: 24px;
+				height: 24px;
+				cursor: pointer;
+				border-radius: 50%;
+				background-color: $color-white;
+				color: $color-closeButton;
+				border: 1px solid $color-closeButton;
+				text-align: center;
+				line-height: 21px;
+			}
+			.modal__close-buttonVideo {
+				position: absolute;
+				top: 20px;
+				right: 20px;
+			}
+			.close-button:hover {
+				border: 1px solid $color-contactUsBgc;
+				color: $color-contactUsBgc;
+			}
+			.modal__personName {
+				margin-top: 14px;
+				font-size: 24px;
+				line-height: 34px;
+				font-weight: normal;
+				color: $color-teamName;
+			}
+			.modal__personPosition {
+				font-family: Open Sans;
+				margin-top: 24px;
+				font-size: 13px;
+				line-height: 18px;
+				text-align: center;
+				letter-spacing: 0.26px;
+				color: $color-teamPosition;
+				opacity: 0.5;
+			}
+			.modal__aboutPerson {
+				flex-grow: 1;
+				margin-top: 32px;
+				font-size: 13px;
+				line-height: 18px;
+				text-align: left;
+				overflow-y: scroll;
+				color: $color-fontaboutPersons;
+			}
+			.modalVideo__Frame {
+				width: 100%;
+				height: 70%;
+			}
+		}
+	}
+	.modal__boxVideo {
+		height: 50%;
+	}
+}
+
+.show-modal {
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1);
+}
+
+@import './mediaqueryTablet.scss';
+@import './mediaqueryDesktop.scss';
+@import './mediaqueryRetina.scss';

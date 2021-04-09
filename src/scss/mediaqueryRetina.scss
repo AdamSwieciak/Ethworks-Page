@@ -1,0 +1,22 @@
+// MEDIA RETINA SCREEN
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+	.team {
+		.team__teamPersons {
+			.team__teamsquare {
+				.team__picture1 {
+					background-image: url('../img/per1X2.png');
+				}
+				.team__picture2 {
+					background-image: url('../img/per2X2.png');
+				}
+				.team__picture3 {
+					background-image: url('../img/per3X2.png');
+				}
+				.team__picture4 {
+					background-image: url('../img/per4X2.png');
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+@media screen and (min-width: 1200px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .team .team__teamPersons .team__teamsquare .team__picture1 {
+    background-image: url("../img/per1X2.png"); }
+  .team .team__teamPersons .team__teamsquare .team__picture2 {
+    background-image: url("../img/per2X2.png"); }
+  .team .team__teamPersons .team__teamsquare .team__picture3 {
+    background-image: url("../img/per3X2.png"); }
+  .team .team__teamPersons .team__teamsquare .team__picture4 {
+    background-image: url("../img/per4X2.png"); } }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1lZGlhcXVlcnlSZXRpbmEuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNDO0lBSUksMENBQTBDLEVBQUE7RUFKOUM7SUFPSSwwQ0FBMEMsRUFBQTtFQVA5QztJQVVJLDBDQUEwQyxFQUFBO0VBVjlDO0lBYUksMENBQTBDLEVBQUEsRUFDMUMiLCJmaWxlIjoibWVkaWFxdWVyeVJldGluYS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvLyBNRURJQSBSRVRJTkEgU0NSRUVOXHJcblxyXG5AbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOiAxMjAwcHgpIGFuZCAobWF4LXdpZHRoOiAxNjAwcHgpIGFuZCAoLXdlYmtpdC1taW4tZGV2aWNlLXBpeGVsLXJhdGlvOiAyKSBhbmQgKG1pbi1yZXNvbHV0aW9uOiAxOTJkcGkpIHtcclxuXHQudGVhbSB7XHJcblx0XHQudGVhbV9fdGVhbVBlcnNvbnMge1xyXG5cdFx0XHQudGVhbV9fdGVhbXNxdWFyZSB7XHJcblx0XHRcdFx0LnRlYW1fX3BpY3R1cmUxIHtcclxuXHRcdFx0XHRcdGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vaW1nL3BlcjFYMi5wbmcnKTtcclxuXHRcdFx0XHR9XHJcblx0XHRcdFx0LnRlYW1fX3BpY3R1cmUyIHtcclxuXHRcdFx0XHRcdGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vaW1nL3BlcjJYMi5wbmcnKTtcclxuXHRcdFx0XHR9XHJcblx0XHRcdFx0LnRlYW1fX3BpY3R1cmUzIHtcclxuXHRcdFx0XHRcdGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vaW1nL3BlcjNYMi5wbmcnKTtcclxuXHRcdFx0XHR9XHJcblx0XHRcdFx0LnRlYW1fX3BpY3R1cmU0IHtcclxuXHRcdFx0XHRcdGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vaW1nL3BlcjRYMi5wbmcnKTtcclxuXHRcdFx0XHR9XHJcblx0XHRcdH1cclxuXHRcdH1cclxuXHR9XHJcbn1cclxuIl19 */

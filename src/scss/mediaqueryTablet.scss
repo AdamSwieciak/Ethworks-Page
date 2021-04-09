@@ -1,0 +1,226 @@
+@import './setings';
+// MEDIA QUERY SECTION 767PX - 1438PX
+
+@media (min-width: 767px) and (max-width: 1438px) {
+	.header {
+		padding-right: 16px;
+		.header__logo img{
+			width: 96px;
+			height: 39px;
+		}
+		.header__links {
+			width: 215px;
+		}
+		.header__link {
+			margin-left: 0px;
+		}
+	}
+	.mainSection {
+		.mainSection__mask {
+			.mainSection__mask--left {
+				left: -170px;
+				top: -85px;
+			}
+			.mainSection__mask--right {
+				left: 680px;
+				top: -295px;
+			}
+		}
+		.mainSection__shape2 {
+			right: 47%;
+			top: 83px;
+		}
+		.mainSection__shape1 {
+			top: -320px;
+		}
+		.mainSection__centerContent {
+			.mainSection__left {
+				width: 80%;
+				margin-top: 128px;
+				.mainSection__article {
+					width: 500px;
+					font-size: 40px;
+					line-height: 56px;
+				}
+				.mainSection__labelSubscribe {
+					font-size: 18px;
+					margin-top: 74px;
+					margin-bottom: 18px;
+				}
+				.mainSection__form {
+					display: flex;
+					flex-direction: row;
+					width: 100%;
+					height: 46px;
+					.mainSection__formInput {
+						width: 90%;
+					}
+					.mainSection__formButton {
+						margin-top: 0;
+						position: absolute;
+						right: 11vw;
+						width: 154px;
+					}
+				}
+			}
+			.mainSection__right {
+				margin-top: 370px;
+				width: 70vw;
+				.mainSection__vPlayer {
+					width: 100%;
+					height: 50vw;
+					.mainSection__Playbutton {
+						width: 30%;
+					}
+				}
+			}
+		}
+		.mainSection__Arrow {
+			width: 60px;
+			height: 60px;
+			margin-top: 639px;
+			margin-bottom: 162px;
+		}
+		.mainSection__Arrow img {
+			width: 40%;
+		}
+		.mainSection__socialmedia {
+			width: 40px;
+			height: 40px;
+			top: 80%;
+			right: 15px;
+		}
+		.mainSection__socialmedia--Facebook {
+			margin-top: 52px;
+		}
+	}
+
+	.swiper-container {
+		margin-top: 87px;
+		.swiper-container__teamHeading {
+			margin-top: 35px;
+			color: $color-teamHeading;
+		}
+		.swiper-slide {
+			margin-bottom: 145px;
+			.team__teamsquare {
+				width: 270px;
+				.team__picture {
+					width: 130px;
+					height: 130px;
+				}
+				.team__personName {
+					font-size: 24px;
+					margin-top: 23px;
+				}
+				.team__personPosition {
+					margin-top: 8px;
+				}
+				.team__aboutPerson {
+					font-size: 18px;
+					line-height: 24px;
+					margin-top: 8px;
+				}
+				.team__links {
+					position: absolute;
+					bottom: -62px;
+				}
+			}
+		}
+		.swiper-pagination {
+			top: 520px;
+		}
+	}
+	.team {
+		display: none;
+	}
+
+	.contactUs {
+		padding-bottom: 12px;
+		.contactUs__paragraphs {
+			width: 47%;
+			font-size: 18px;
+			line-height: 24px;
+		}
+		.contactUs__formSquare {
+			width: 50%;
+			padding: 24px 41px;
+		}
+	}
+
+	.footerPage {
+		justify-content: flex-start;
+		.footerPage__top {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			margin-top: 30px;
+			padding: 0 16px;
+			.footerPage__logo {
+				width: 96px;
+				padding-right: 124px;
+				height: 39px;
+				margin-top: 20px;
+			}
+			.footerPage__contactLink {
+				margin-top: 10px;
+				width: 220px;
+				.footerPage__contactHeading {
+					font-size: 16px;
+					margin-bottom: 16px;
+					line-height: 19px;
+					text-align: center;
+					letter-spacing: 0.32px;
+					color: $color-footerContactHeading;
+				}
+				.footerPage__mail {
+					font-size: 20px;
+					line-height: 24px;
+					text-align: center;
+					letter-spacing: 0.4px;
+					color: $color-footerMailLink;
+					text-decoration-line: underline;
+				}
+			}
+			.footerPage__button {
+				width: 220px;
+				height: 46px;
+				margin-top: 15px;
+			}
+		}
+		.footerPage__bottom {
+			background-color: transparent;
+			margin-top: 40px;
+			padding: 8px;
+			.footerPage__link {
+				flex-grow: 1;
+				font-size: 18px;
+				line-height: 24px;
+				border-left: 2px solid $color-footerLinkBorderleft;
+			}
+			.footerPage__link:nth-child(1) {
+				border: none;
+			}
+		}
+	}
+	.modal {
+		.modal__box {
+			width: 90%;
+			padding: 22px;
+			box-sizing: border-box;
+			.modal__main {
+				.modal__personName {
+					margin-top: 16px;
+					font-size: 40px;
+				}
+				.modal__aboutPerson {
+					font-size: 18px;
+					line-height: 24px;
+				}
+				.modalVideo__Frame {
+					height: 80%;
+				}
+			}
+		}
+	}
+}	
