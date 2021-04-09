@@ -1,39 +1,49 @@
-$color-white:#fff;
-$color-fonLink:#1c2085;
-$color-underlineLink:#5454d4;
+$color-white: #fff;
+$color-fonLink: #1c2085;
+$color-underlineLink: #5454d4;
 
-$color-bgctriangle2: #4250BF;
-$color-shwtriangle2:  #263396;
+$color-bgctriangle2: #4250bf;
+$color-shwtriangle2: #263396;
 $color-bgctriangle1: #3947b6;
 $color-shwtriangle1: #2a389d;
-$color-gradtrianglemask: linear-gradient(85.66deg, #3847b5 41.37%, #253194 97.44%);
+$color-gradtrianglemask: linear-gradient(
+	85.66deg,
+	#3847b5 41.37%,
+	#253194 97.44%
+);
 
-$color-bgcSocialMedia: #63C7FF;
-$color-colorSocialMedia: #DADADA;
+$color-bgcSocialMedia: #63c7ff;
+$color-colorSocialMedia: #dadada;
 
-$color-bgcArrow:#3543AE;
-$color-borderArrow: rgba(231, 231, 231, .3);
+$color-bgcArrow: #3543ae;
+$color-borderArrow: rgba(231, 231, 231, 0.3);
 
 $color-teamHeading: #1c1f83;
 $color-teamName: #38a5db;
 $color-teamPosition: #011226;
 $color-teamAbout: #45515f;
-$color-teamLinksborder: rgba(127, 139, 152, .3);
+$color-teamLinksborder: rgba(127, 139, 152, 0.3);
 $color-teamLinksIcon: #001832;
 
-$color-contactUsBgc: #252B42;
-$color-contactUsFromBgc: #4250BF;
+$color-contactUsBgc: #252b42;
+$color-contactUsFromBgc: #4250bf;
 
-$color-footerGradient: linear-gradient(180deg, #FAFBFF 0%, #EFF1F9 41.68%, #E9ECF6 49.59%, #CED3E8 93.91%);
+$color-footerGradient: linear-gradient(
+	180deg,
+	#fafbff 0%,
+	#eff1f9 41.68%,
+	#e9ecf6 49.59%,
+	#ced3e8 93.91%
+);
 $color-footerContactHeading: #263396;
-$color-footerMailLink: #0F81FF;
-$color-footerLinks: #45515F;
-$color-footerLinkBorderleft: #9CA4C7;
+$color-footerMailLink: #0f81ff;
+$color-footerLinks: #45515f;
+$color-footerLinkBorderleft: #9ca4c7;
 
 $color-buttonsBgc: #38a5db;
 $color-buttonsSdw: rgba(56, 165, 219, 0.6);
 $color-FormFonts: #576677;
 
-$color-blurbgcModal: rgba(37, 43, 66, .5);
+$color-blurbgcModal: rgba(37, 43, 66, 0.5);
 $color-closeButton: #828282;
-$color-fontaboutPersons: #45515F;
+$color-fontaboutPersons: #45515f;

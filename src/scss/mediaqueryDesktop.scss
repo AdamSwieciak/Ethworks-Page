@@ -4,7 +4,7 @@
 @media (min-width: 1439px) {
 	.header {
 		padding: 0 136px;
-		.header__logo img{
+		.header__logo img {
 			width: 96px;
 			height: 39px;
 		}
@@ -297,8 +297,9 @@
 				}
 			}
 		}
-		.modal__boxVideo{
-			width: 70%;
+		.modal__boxVideo {
+			height: 80%;
+			width: 60%;
 		}
 	}
 }
